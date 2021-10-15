@@ -1,11 +1,11 @@
-name: $project.name
-version: $project.version
-main: io.github.blugon.explosionprotection.ExplosionProtection
+name: ${project.name}
+version: ${project.version}
+main: ${project.group}.${project.name.toLowerCase()}.${project.name}
 api-version: 1.17
-description: ExplosionProtection
 author: Blugon
 
 commands:
-  explode:
-    usage: /explode <Boolean>
+  ep:
     description: Explode On/Off
+
+  test:
