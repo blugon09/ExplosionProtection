@@ -16,7 +16,6 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT")
 
-    implementation("net.projecttl:InventoryGUI-api:4.1.8")
     implementation("com.github.Blugon0921:ItemHelper:1.0.6")
     implementation("net.kyori:adventure-api:4.9.2")
 }

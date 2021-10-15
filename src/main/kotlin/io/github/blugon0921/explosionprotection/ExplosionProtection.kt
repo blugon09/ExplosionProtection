@@ -1,12 +1,7 @@
 package io.github.blugon0921.explosionprotection
 
-import io.github.blugon0921.itemhelper.ItemObject
-import net.kyori.adventure.text.Component
 import net.md_5.bungee.api.ChatColor
-import net.projecttl.inventory.gui.gui
-import net.projecttl.inventory.gui.utils.InventoryType
 import org.bukkit.Bukkit
-import org.bukkit.Material
 import org.bukkit.Particle
 import org.bukkit.Sound
 import org.bukkit.block.data.type.Bed
@@ -90,12 +85,6 @@ class ExplosionProtection : JavaPlugin(),Listener {
                 }
             } else {
                 sender.sendMessage("${ChatColor.RED}권한이 부족합니다")
-            }
-        } else if(command.name == "test") {
-            (sender as Player).gui(this, InventoryType.CHEST_9, Component.text("asdf")) {
-                slot(3, ItemObject(Material.EMERALD)) {
-                    sender.inventory.addItem(ItemObject(Material.EMERALD, 1, "Test", listOf("asdf", "asdf")))
-                }
             }
         }
         return false
