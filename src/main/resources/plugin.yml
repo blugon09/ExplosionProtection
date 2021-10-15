@@ -7,5 +7,3 @@ author: Blugon
 commands:
   ep:
     description: Explode On/Off
-
-  test:
